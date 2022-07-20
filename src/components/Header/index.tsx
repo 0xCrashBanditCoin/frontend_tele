@@ -221,8 +221,7 @@ const StyledNavLink = styled(NavLink).attrs({
     color: ${({ theme }) => darken(0.1, theme.text1)};
   }
 `
-
-const StyledExternalLink = styled(ExternalLink).attrs({
+styled(ExternalLink).attrs({
   activeClassName,
 })<{ isActive?: boolean }>`
   ${({ theme }) => theme.flexRowNoWrap}
@@ -253,7 +252,6 @@ const StyledExternalLink = styled(ExternalLink).attrs({
       display: none;
 `}
 `
-
 export const StyledMenuButton = styled.button`
   position: relative;
   width: 100%;
