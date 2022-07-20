@@ -9,8 +9,9 @@ import Web3ReactManager from '../components/Web3ReactManager'
 import ErrorBoundary from '../components/ErrorBoundary'
 import DarkModeQueryParamReader from '../theme/DarkModeQueryParamReader'
 import { FarmListPage } from './Farm/FarmList'
+import { PoolsListPage } from './Pools/PoolsList'
 import Farm from './Farm/Farm'
-
+import Pools from './Pools/Pools'
 import PoolV2 from './Pool/v2'
 import PoolFinder from './PoolFinder'
 import RemoveLiquidity from './RemoveLiquidity'
@@ -78,8 +79,10 @@ export default function App() {
                 <Route exact strict path="/farm" component={FarmListPage} />
                 <Route exact strict path="/farm/:poolId" component={Farm} />
 
-                <Route exact strict path="/stake" component={StakingPage} />
+                <Route exact strict path="/pools" component={PoolsListPage} />
+                <Route exact strict path="/pools/:poolId" component={Pools} />
 
+                <Route exact strict path="/stake" component={StakingPage} />
                 <Route exact strict path="/send" component={RedirectPathToSwapOnly} />
                 <Route exact strict path="/swap/:outputCurrency" component={RedirectToSwap} />
                 <Route exact strict path="/swap" component={Swap} />

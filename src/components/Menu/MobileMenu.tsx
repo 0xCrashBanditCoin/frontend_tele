@@ -108,9 +108,9 @@ export function MobileMenu() {
           ? 'Pool'
           : location.pathname.startsWith('/farm')
           ? 'Farm'
-          : location.pathname.startsWith('/stake')
-          ? 'Stake'
-          : 'Stake'}
+          : location.pathname.startsWith('/pools')
+          ? 'Pools'
+          : 'Pools'}
       </StyledBridgeButton>
 
       {open && (
@@ -138,8 +138,8 @@ export function MobileMenu() {
           >
             {t('Farm')}
           </StyledNavLink>
-          <StyledNavLink id={`stake-nav-link`} to={'/stake'}>
-            {t('Stake')}
+          <StyledNavLink id={`stake-nav-link`} to={'/pools'}>
+            {t('Pools')}
           </StyledNavLink>
           <BridgeMenu />
         </Menu>

@@ -65,14 +65,14 @@ export function BridgeMenu() {
   return (
     <div ref={node as any}>
       <StyledBridgeButton onClick={toggle} isActive={open} ref={setReferenceElement as any}>
-        Bridges
+        Infos
       </StyledBridgeButton>
 
       {open && (
         <Menu ref={setPopperElement as any} style={styles.popper} {...attributes.popper}>
           <MenuItem href="https://app.nomad.xyz/">
             <div>
-              Nomad <span style={{ fontSize: '11px', textDecoration: 'none !important' }}>↗</span>
+              Vote <span style={{ fontSize: '11px', textDecoration: 'none !important' }}>↗</span>
             </div>
           </MenuItem>
           <MenuItem href="https://bridge.connext.network/">
