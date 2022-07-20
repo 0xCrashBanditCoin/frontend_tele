@@ -10,7 +10,7 @@ import React, { Fragment } from 'react'
 
 import JSBI from 'jsbi'
 // import CurrencyLogo from 'components/CurrencyLogo'
-import { PoolsTable, PoolsTableRow } from 'components/pool/PoolsTable'
+import { PoolsTableRow } from 'components/pool/PoolsTable'
 
 import {
   MinichefRawPoolInfo,
@@ -24,7 +24,6 @@ import {
 import styled from 'styled-components'
 import { Tux } from '../../components/farm/TuxBanner'
 import { PoolsHeading } from '../../components/pool/PoolsHeading'
-import { HRDark } from '../../components/HR/HR'
 import { CurrencyAmount } from 'sdk-core/entities'
 import { useUSDCValue } from 'hooks/useUSDCPrice'
 
@@ -34,7 +33,9 @@ const FarmListContainer = styled.div`
 `
 
 export function PoolsListPage() {
-  const pools = usePools()
+  {
+    /*const pools = usePools()*/
+  }
 
   return (
     <FarmListContainer>

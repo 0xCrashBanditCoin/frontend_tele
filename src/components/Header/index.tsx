@@ -10,7 +10,6 @@ import styled from 'styled-components/macro'
 
 import { useActiveWeb3React } from '../../hooks/web3'
 import { useETHBalances } from '../../state/wallet/hooks'
-import { BridgeMenu } from '../Menu/BridgeMenu'
 import { MobileMenu } from '../Menu/MobileMenu'
 
 // import { ExternalLink } from '../../theme'
